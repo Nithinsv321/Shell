@@ -16,5 +16,5 @@ echo "Do you want to push?(y/n) "
 read ques
 if [ $ques == "y" ]
 then
-	git push orgin master
+	git push origin master
 fi

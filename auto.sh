@@ -13,9 +13,9 @@ then
 fi
 echo "Do you want to push?(y/n) "
 read ques
-git remote --v
 if [ $ques == "y" ]
 then
+    git remote --v
     echo "Enter the repository name:"
     read repo
 	git push $repo master

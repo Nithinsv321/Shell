@@ -11,10 +11,12 @@ then
 	 read message
 	 git commit --m "$message"
 fi
-
 echo "Do you want to push?(y/n) "
 read ques
+git remote --v
 if [ $ques == "y" ]
 then
-	git push origin master
+    echo "Enter the repository name:"
+    read repo
+	git push $repo master
 fi

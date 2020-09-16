@@ -11,3 +11,10 @@ then
 	 read message
 	 git commit --m "$message"
 fi
+
+echo "Do you want to push?(y/n) "
+read ques
+if [ $ques == "y" ]
+then
+	git push orgin master
+fi
